@@ -10,7 +10,6 @@ Then run the solution via Visual Studio.
 #Missing:#
 - Unit and integration tests (they will be written first)
 - Data in the database
-- Implementation of Windsor Di Container?
 - Implementation of Roles and AuthorizeAttribute
 - Implementation of news controller
 - Implemententation of orders controller to handle orders

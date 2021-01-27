@@ -1,6 +1,7 @@
 ##WebShop##
 
 - Make sure Docker instance is running.
+- Install dotnet core 3.1
 - Insert the correct password in the appsettings.json files (same as in project, not included here).
 - In Package manager Console in Visual Studio, run:
 Update-Database

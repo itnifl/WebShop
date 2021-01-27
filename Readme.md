@@ -8,17 +8,22 @@ Update-Database
 Then run the solution via Visual Studio.
 
 #Missing:#
-- Unit and integration tests
+- Unit and integration tests (they will be written first)
 - Data in the database
+- Implementation of Windsor Di Container?
 - Implementation of Roles and AuthorizeAttribute
 - Implementation of news controller
+- Implemententation of orders controller to handle orders
 - Checkout functionality
-- Filter capability on fething products from the api, on product names.
+- Filter capability on fetching products from the api, on product names.
 - pagination support from the api
 
 #How to testst:#
+- Run the code in Visual Studio after settig a break point in the controller, then it will be possible to step through and have a look.
 - Run the automated tests
 - Use the browser and brows to:
  -- api/products
 - Use a Rest clieand and Post to:
  -- api/products
+ 
+

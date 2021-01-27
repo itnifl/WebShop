@@ -8,6 +8,7 @@ Update-Database
 Then run the solution via Visual Studio.
 
 #Missing:#
+- Unit and integration tests
 - Data in the database
 - Implementation of Roles and AuthorizeAttribute
 - Implementation of news controller

@@ -66,6 +66,7 @@ namespace WebShop.DataAccess.ProductDatabaseContext
 
             #region Setup Primary Keys
 
+            modelBuilder.Entity<News>().HasKey(ug => ug.NewsId);
             modelBuilder.Entity<Order>().HasKey(ug => ug.OrderId);
             modelBuilder.Entity<User>().HasKey(u => u.UserId);
             modelBuilder.Entity<Product>().HasKey(ug => ug.ProductId);

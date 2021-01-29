@@ -7,10 +7,14 @@ namespace WebShop.DataAccess.ProductDatabaseContext.DataTransferObjects
 {
     public class OrderDto
     {
+        public OrderDto(List<ProductOrderDto> productOrders)
+        {
+            ProductOrders = productOrders;
+        }
         public OrderDto(Order order)
         {
             this.OrderId = order.OrderId;
-            var ProductOrders = new List<ProductOrderDto>();
+            ProductOrders = new List<ProductOrderDto>();
             foreach (var po in order.ProductOrders)
             {
                 ProductOrders.Add(new ProductOrderDto(po));

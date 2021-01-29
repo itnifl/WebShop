@@ -8,6 +8,10 @@ namespace WebShop.DataAccess.ProductDatabaseContext.DataTransferObjects
 {
     public class ProductOrderDto
     {
+        public ProductOrderDto(List<ProductDto> productsInOrder)
+        {
+            this.ProductsInOrder = productsInOrder;
+        }
         public ProductOrderDto(ProductOrder po)
         {
             this.ProductOrderId = po.ProductOrderId;

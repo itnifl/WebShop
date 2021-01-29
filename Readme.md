@@ -23,7 +23,7 @@ Then run the solution via Visual Studio.
 - Run the automated tests
 - Use the browser and brows to:
  -- api/products
-- Use a Rest clieand and Post to:
+- Use a Rest client and Post to:
  -- api/products
  
 

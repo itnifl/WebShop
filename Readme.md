@@ -2,7 +2,8 @@
 
 - Make sure Docker instance is running.
 - Install dotnet core 3.1
-- Insert the correct password in the appsettings.json files (same as in project, not included here).
+- Insert the correct password in the appsettings.json files in WebShop.DataAccess and WebShop.API (same as in project, not included here).
+- Change the default project to WebShop.DataAccess in package manager console
 - In Package manager Console in Visual Studio, run:
 Update-Database
 

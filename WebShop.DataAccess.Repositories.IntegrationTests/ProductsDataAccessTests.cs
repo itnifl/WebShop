@@ -31,5 +31,18 @@ namespace WebShop.DataAccess.Repositories.IntegrationTests
             var products = _dataAccess.GetProducts();
             Assert.True(products.Any(x => x.Name == dto.Name && x.Price == dto.Price));
         }
+
+
+        [Test]
+        public void ICanNotDropTables()
+        {
+            //Arrange
+            var dto = new ProductDto("drop table Product;", 200, "Super nails");
+            //Assign
+            _dataAccess.SaveProducts(new List<ProductDto> { dto });
+            //Assert
+            var products = _dataAccess.GetProducts();
+            Assert.True(products.Any(x => x.Name == dto.Name && x.Price == dto.Price));
+        }
     }
 }

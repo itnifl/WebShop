@@ -36,6 +36,10 @@ Then run the solution via Visual Studio, or see the 'How to test' section below.
   "name": "Great shiny product",
   "price": 123,
   "description": "From Sparkly Companies Limited"
+},{
+  "name": "Great shiny product",
+  "price": 123,
+  "description": "drop table product;"
 }]
  , then browse to: /api/products
 

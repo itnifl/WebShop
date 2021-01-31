@@ -7,6 +7,10 @@ namespace WebShop.DataAccess.ProductDatabaseContext.DataTransferObjects
 {
     public class NewsDto
     {
+        public NewsDto()
+        {
+
+        }
         public NewsDto(string header, string article)
         {
             this.Header = header;

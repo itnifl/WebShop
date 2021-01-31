@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebShop.DataAccess.ProductDatabaseContext;
 
 namespace WebShop.DataAccess.Migrations
 {
     [DbContext(typeof(WebShop.DataAccess.ProductDatabaseContext.ProductDatabaseContext))]
-    partial class ProductDatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20210129125412_AddingNews")]
+    partial class AddingNews
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

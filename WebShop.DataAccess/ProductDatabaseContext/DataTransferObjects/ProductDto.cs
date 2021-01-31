@@ -7,6 +7,10 @@ namespace WebShop.DataAccess.ProductDatabaseContext.DataTransferObjects
 {
     public class ProductDto
     {
+        public ProductDto()
+        {
+
+        }
         public ProductDto(string name, double price, string description)
         {
             this.Name = name;

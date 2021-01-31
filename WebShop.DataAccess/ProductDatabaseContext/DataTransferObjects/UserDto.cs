@@ -8,6 +8,10 @@ namespace WebShop.DataAccess.ProductDatabaseContext.DataTransferObjects
 {
     public class UserDto
     {
+        public UserDto()
+        {
+
+        }
         public UserDto(User user)
         {
             this.UserId = user.UserId;

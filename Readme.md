@@ -44,4 +44,7 @@ Then run the solution via Visual Studio, or see the 'How to test' section below.
 }]
 ```
  , then browse to: /api/products
-
+- Try: /api/products?nameFilter=drop%20table%20product
+	, then /api/products - we can see everything i still there.
+- Try: /api/products?itemsPerPage=1&getPage=2
+	, we should get the second item in the list (order is not explicitly implemented, but from the list as shown by /api/products).

@@ -32,10 +32,12 @@ Then run the solution via Visual Studio, or see the 'How to test' section below.
 - Run the code in Visual Studio and use a Rest client and Post to:
  -- /api/products
  Content:
+ ```json
 [{
-  "name": "Great shiny product",
-  "price": 123,
+  "name": "ShinyStuff",
+  "price": 99,
   "description": "From Sparkly Companies Limited"
 }]
+```
  , then browse to: /api/products
 

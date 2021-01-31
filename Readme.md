@@ -10,7 +10,7 @@ Update-Database
 Then run the solution via Visual Studio, or see the 'How to test' section below.
 
 #Missing:#
-- Most Unit and integration tests for required funcyionality, there are some created. There are tests made for saving and reading products to database.
+- Most Unit and integration tests for required functionality, there are some created. There are tests made for saving and reading products to database.
 - Data in the database (you have to Post your own, see below in the 'How to test' section).
 - Implementation of roles and AuthorizeAttribute.
 - Implementation of the news controller.
@@ -24,8 +24,8 @@ Then run the solution via Visual Studio, or see the 'How to test' section below.
 
 
 #How to test#
-- Run the code in Visual Studio after settig a break point in the controller, then it will be possible to step through and have a look.
-- Run the automated tests for products. Note: the tests delete all products from the database prior to using the db, quick solution. Could be handeled with InMemoryDb instead that does not commit to database, or could have never comitted the transactions when testing. Or perhaps one could have a dedicated database for this.
+- Run the code in Visual Studio after settig a break point in the controller, it will then be possible to step through and have a look at stuff.
+- Run the automated tests for products. Note: the tests delete all products from the database prior to using the db, this is a quick solution. Could be handeled with InMemoryDb instead that does not commit to database, or could have never comitted the transactions when testing. Or perhaps one could have a dedicated database for this, where we can mess around as we please.
 - Run the code in Visual Studio and use a browser to browse to:
  -- /api/products
  

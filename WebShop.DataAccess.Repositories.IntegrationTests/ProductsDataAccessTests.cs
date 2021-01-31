@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.VisualStudio.TestPlatform.Common.Exceptions;
 using NUnit.Framework;
 using WebShop.DataAccess.ProductDatabaseContext.DataTransferObjects;
 using WebShop.DataAccess.Repositories.Interfaces;
@@ -7,13 +9,15 @@ using WebShop.DataAccess.Repositories.Repos;
 
 namespace WebShop.DataAccess.Repositories.IntegrationTests
 {
-    public class ProductsDataAccessTests
+    public class ProductsDataAccessTests : BaseSetup
     {
         private IProductDataAccess _dataAccess;
+
         [SetUp]
         public void Setup()
         {
-            _dataAccess = new ProductDataAccess(); //Preferably get from container
+            _dataAccess = ServiceProvider.GetService<IProductDataAccess>();
+            _dataAccess.DeleteProducts();
         }
 
         [Test]

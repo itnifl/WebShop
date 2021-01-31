@@ -7,7 +7,7 @@ using WebShop.DataAccess.Repositories.Repos;
 
 namespace WebShop.DataAccess.Repositories.IntegrationTests
 {
-    public class OrdersDataAccessTests
+    public class OrdersDataAccessTests : BaseSetup
     {
         private IOrderDataAccess _orderDataAccess;
         private IProductDataAccess _productDataAccess;

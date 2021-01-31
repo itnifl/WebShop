@@ -4,7 +4,7 @@ namespace WebShop.Commons.Extensions
 {
     public static class StringExtensions
     {
-        public static bool IsNull(this string str)
+        public static bool IsNullOrEmpty(this string str)
         {
             return String.IsNullOrEmpty(str);
         }

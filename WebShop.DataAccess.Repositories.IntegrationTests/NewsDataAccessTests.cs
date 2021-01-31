@@ -7,7 +7,7 @@ using WebShop.DataAccess.Repositories.Repos;
 
 namespace WebShop.DataAccess.Repositories.IntegrationTests
 {
-    public class NewsDataAccessTests
+    public class NewsDataAccessTests : BaseSetup
     {
         private INewsDataAccess _dataAccess;
         [SetUp]

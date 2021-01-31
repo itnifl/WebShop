@@ -14,6 +14,8 @@ using WebShop.DataAccess.ProductDatabaseContext;
 using WebShop.Commons.Extensions;
 using WebShop.DataAccess.ProductDatabaseContext.Entities;
 using Microsoft.EntityFrameworkCore;
+using WebShop.DataAccess.Repositories.Interfaces;
+using WebShop.DataAccess.Repositories.Repos;
 
 namespace WebShop.API
 {
@@ -31,7 +33,9 @@ namespace WebShop.API
         {
             string mySqlConnectionStr = Configuration.GetConnectionString("DbConnectionString");
             services.AddDbContext<ProductDatabaseContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
-
+            services.AddTransient<INewsDataAccess, NewsDataAccess>();
+            services.AddTransient<IOrderDataAccess, OrderDataAccess>();
+            services.AddTransient<IProductDataAccess, ProductDataAccess>();
 
             services.AddControllers();
         }
